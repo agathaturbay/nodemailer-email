@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Indieflower-regular';
+  src: url('../../assets/fonts/IndieFlower-Regular.ttf');
+}
+
+.container {
+    background-image: url('../../assets/forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+  box-shadow: 0 0 5px 0;
+  background: center;
+  backdrop-filter: contrast(80%) blur(10px);
+  text-align: center;
+  width: 75%;
+  height: 65%;
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  padding-top: 3rem;
+  font-family: 'Indieflower-regular';
+}
+
+mat-form-field {
+  width: 80%;
+  padding: 15px 0;
+  color: white;
+  font-size: 12px;
+}
+
+textarea {
+  resize: none !important;
+}
+
+.email-btn{
+  width: 150px;
+  height: 25px;
+  background-color: #3e1100;
+  color: white;
+  border-radius: 8px;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  color: white !important;
+  font-size: 16px;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  background-color: #8f5a2d !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+ background-color: #8f5a2d !important;
+}
+
+@media (max-width: 450px) {
+  form {
+    width: 90%;
+    height: 70%;
+  }
+}
